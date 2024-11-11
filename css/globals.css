@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box; /* Aplica o box-sizing para todos os elementos */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+body {
+    font-family: 'arial'; /* Define a fonte padrão para o corpo */
+}
+
+.header-inner-content {
+    max-width: 1300px; /* Define a largura máxima do contêiner */
+    margin-left: auto; /* Centraliza o contêiner horizontalmente */
+    margin-right: auto; /* Centraliza o contêiner horizontalmente */
+}
+
+.navbar {
+    background-color: #1C2228; /* Cor de fundo da barra de navegação */
+    padding: 1rem; /* Espaçamento interno */
+    position: sticky; /* Torna a barra de navegação fixa no topo */
+    top: 0; /* Define a posição da barra fixa */
+    box-shadow: 10px 0px 10px #1C2228; /* Adiciona sombra à barra */
+    z-index: 99; /* Garante que a barra fique acima de outros elementos */
+}
+
+.navbar > div {
+    display: flex; /* Usa o flexbox para organizar os elementos */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+}
+
+.logo {
+    color: #70AAAC; /* Cor do texto da logo */
+}
+
+.logo span {
+    color: #fff; /* Cor do texto do span dentro da logo */
+}
+
+nav ul {
+    display: flex; /* Exibe os itens da lista em linha */
+    list-style: none; /* Remove os marcadores da lista */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.nav-icon-container {
+    display: flex; /* Usa o flexbox para organizar os ícones */
+    align-items: center; /* Alinha os ícones verticalmente ao centro */
+}
+
+.nav-icon-container img {
+    width: 30px; /* Define a largura dos ícones */
+    cursor: pointer; /* Adiciona o ponteiro ao passar o mouse */
+}
+
+.nav-icon-container img:first-child {
+    margin-right: 1rem; /* Adiciona margem ao primeiro ícone */
+}
+
+nav ul li {
+    color: #fff; /* Cor do texto dos itens da lista */
+    margin-right: 1.5rem; /* Espaçamento entre os itens */
+    cursor: pointer; /* Adiciona o ponteiro ao passar o mouse */
+}
+
+nav ul li:hover {
+    transform: translateY(-5px); /* Eleva o item ao passar o mouse */
+    transition: all 0.2s; /* Transição suave */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.menu-button {
+    display: none; /* Oculta o botão de menu */
+}
+
+header {
+    background-image: radial-gradient(#fff, #c7c7c7); /* Gradiente de fundo */
+}
+
+.header-button-side {
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    justify-self: center; /* Centraliza o próprio elemento */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+.header-button-side-left {
+    height: 100%; /* Altura total do contêiner */
+    flex-basis: 50%; /* Metade do espaço disponível */
+}
+
+.header-button-side-left h2 {
+    font-size: 3.2rem; /* Tamanho da fonte do título */
+    margin-bottom: 1.5rem; /* Espaçamento inferior */
+}
+
+.header-button-side-left p {
+    line-height: 1.5rem; /* Altura da linha */
+    margin-bottom: 1.5rem; /* Espaçamento inferior */
+}
+
+.header-button-side-left button {
+    background-color: #1C2228; /* Cor de fundo do botão */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Adiciona o ponteiro ao passar o mouse */
+    padding: 0.8rem 3.8rem; /* Espaçamento interno */
+    border-radius: 9999px; /* Bordas arredondadas */
+    color: #fff; /* Cor do texto */
+    font-weight: 500; /* Espessura da fonte */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: all 0.2s; /* Transição suave */
+}
+
+.header-button-side-left button:hover {
+    background-color: #525250; /* Cor de fundo ao passar o mouse */
+}
+
+.header-button-side-right {
+    flex-basis: 50%; /* Metade do espaço disponível */
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Alinha os elementos verticalmente */
+    align-content: center; /* Alinha o conteúdo */
+}
+
+.header-button-side-right img {
+    width: 115%; /* Largura da imagem */
+}
+
+.linha {
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    text-align-last: center; /* Alinhamento do texto */
+}
+
+/* Define a cor de fundo da seção principal */
+main {
+    background-color: #ECE3DC;
+}
+
+/* Define a cor de fundo para áreas cinzas */
+.gray-background {
+    background-color: #2c2c2c;
+}
+
+/* Centraliza o conteúdo da página com uma largura máxima */
+.page-inner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Define layout de colunas com espaçamento */
+.cols {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+/* Configura o layout de três colunas com espaçamento entre elas */
+.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+/* Garante que as imagens nas colunas não excedam a largura do contêiner */
+.cols-3 img {
+    max-width: 100%;
+}
+
+.cols-4 img {
+    max-width: 100%;
+}
+
+/* Configura o layout de quatro colunas com espaçamento menor */
+.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* Adiciona cursor de ponteiro e transição suave nos elementos das colunas */
+.cols > * {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols > *:hover {
+    transform: translateY(-5px);
+}
+
+/* Estiliza o título das seções */
+.section-title {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+/* Cria uma linha sublinhada decorativa */
+.subtitle-underline {
+    width: 100px;
+    height: 5px;
+    background: #1C2228;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+
+/* Estiliza os produtos */
+.product {
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.product-name {
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+
+.rate {
+    color: #1C2228;
+    font-size: 1.3rem;
+}
+
+.product-price span {
+    font-weight: 600;
+}
+
+.contato {
+    text-align: center;
+}
+
+.contato h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.btn-contato {
+    background-color: #1C2228;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.mapa {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.mapa iframe {
+    width: 600px;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+}
+
+.map {
+    padding: 40px 20px;
+}
+
+/* Estilização do footer */
+.footer-content {
+    display: flex;
+    align-items: center;
+    color: #c7c7c7;
+    padding: 4rem 1rem;
+    gap: 10rem;
+}
+
+.share-options > * {
+    margin: 1rem 0;
+}
+
+.share-options > p:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+.share-options > div {
+    display: flex;
+}
+
+.share-options > div img {
+    width: 60px;
+}
+
+.logo-footer {
+    text-align: center;
+}
+
+.sobre {
+    font-size: 10px;
+    margin-left: 0;
+}
+
+/* Layout dos produtos */

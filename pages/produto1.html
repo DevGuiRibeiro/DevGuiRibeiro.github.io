@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; /* Define a fonte padrão */
+        }
+
+        body {
+            display: flex; /* Exibe o corpo como um contêiner flex */
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+            min-height: 100vh; /* Altura mínima de 100% da altura da tela */
+            background-color: #2c2c2c; /* Cor de fundo */
+        }
+
+        .container {
+            display: flex; /* Exibe o contêiner como flex */
+            width: 90%; /* Largura de 90% da tela */
+            max-width: 3000px; /* Largura máxima */
+            background-color: #699EA0; /* Cor de fundo */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            padding: 20px; /* Espaçamento interno */
+            gap: 20px; /* Espaçamento entre os elementos */
+        }
+
+        .product-image {
+            flex: 1; /* Tamanho flexível da imagem do produto */
+        }
+
+        .product-image img {
+            width: 100%; /* Largura total da imagem */
+            border-radius: 8px; /* Bordas arredondadas */
+        }
+
+        .product-info {
+            flex: 2; /* Tamanho flexível das informações do produto */
+            text-align: left; /* Alinhamento à esquerda */
+            display: flex; /* Exibe como flex */
+            flex-direction: column; /* Direção da coluna */
+            justify-content: space-between; /* Espaça os elementos */
+        }
+
+        .product-info h1 {
+            margin-top: 20px; /* Espaçamento superior */
+            font-size: 30px; /* Tamanho da fonte */
+            color: #333; /* Cor do texto */
+            margin-bottom: 10px; /* Espaçamento inferior */
+        }
+
+        .product-info h2 {
+            margin-top: -60px; /* Espaçamento superior negativo */
+            font-size: 20px; /* Tamanho da fonte */
+            color: #333; /* Cor do texto */
+            margin-bottom: 10px; /* Espaçamento inferior */
+        }
+
+        .price {
+            font-size: 28px; /* Tamanho da fonte */
+            font-weight: bold; /* Negrito */
+            color: #ffffff; /* Cor do texto */
+            margin-bottom: 15px; /* Espaçamento inferior */
+        }
+
+        .product-features {
+            display: flex; /* Exibe como flex */
+            justify-content: space-between; /* Espaça os elementos */
+            margin-bottom: 20px; /* Espaçamento inferior */
+        }
+
+        .feature {
+            background-color: #2c2c2c; /* Cor de fundo */
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 4px; /* Bordas arredondadas */
+            font-size: 14px; /* Tamanho da fonte */
+            flex: 1; /* Tamanho flexível */
+            text-align: center; /* Alinhamento central */
+            margin: 0 5px; /* Espaçamento lateral */
+            color: #ffffff; /* Cor do texto */
+        }
+
+        .cep-freight-container {
+            display: flex; /* Exibe como flex */
+            gap: 10px; /* Espaçamento entre elementos */
+            margin: 10px 0; /* Espaçamento superior e inferior */
+            align-items: center; /* Alinha os itens ao centro */
+        }
+
+        .cep-input {
+            flex: 1; /* Tamanho flexível */
+            padding: 10px; /* Espaçamento interno */
+            border: 1px solid #ddd; /* Borda */
+            border-radius: 4px; /* Bordas arredondadas */
+        }
+
+        .calculate-freight {
+            background-color: #4caf50; /* Cor de fundo */
+            color: #fff; /* Cor do texto */
+            padding: 10px 15px; /* Espaçamento interno */
+            border: none; /* Sem borda */
+            border-radius: 4px; /* Bordas arredondadas */
+            font-size: 16px; /* Tamanho da fonte */
+            cursor: pointer; /* Cursor de ponteiro */
+            transition: background-color 0.3s; /* Transição suave */
+        }
+
+        .calculate-freight:hover {
+            background-color: #0c4d8f; /* Cor de fundo ao passar o mouse */
+        }
+
+        .cart-help-container {
+            display: flex; /* Exibe como flex */
+            gap: 10px; /* Espaçamento entre elementos */
+            margin-top: 10px; /* Espaçamento superior */
+        }
+
+        .buy-button,
+        .add-to-cart {
+            flex: 1; /* Tamanho flexível */
+            padding: 10px; /* Espaçamento interno */
+            font-size: 16px; /* Tamanho da fonte */
+            border: none; /* Sem borda */
+            border-radius: 4px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de ponteiro */
+            transition: background-color 0.3s; /* Transição suave */
+            color: #fff; /* Cor do texto */
+        }
+
+        .buy-button {
+            background-color: #2c2c2c; /* Cor de fundo */
+        }
+
+        .buy-button:hover {
+            background-color: #2c2c2c; /* Cor de fundo ao passar o mouse */
+        }
+
+        .add-to-cart {
+            background-color: #2c2c2c; /* Cor de fundo */
+        }
+
+        .add-to-cart:hover {
+            background-color: #2c2c2c; /* Cor de fundo ao passar o mouse */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Imagem do Produto à Esquerda -->
+        <div class="product-image">
+            <img src="https://lastfm.freetls.fastly.net/i/u/770x0/90b54d4d4658b8215a5fcd3cf00072d7.jpg#90b54d4d4658b8215a5fcd3cf00072d7" alt="Imagem do Produto"> <!-- Imagem do produto com URL -->
+        </div>
+
+        <!-- Informações do Produto à Direita -->
+        <div class="product-info">
+            <h1>HIT ME HARD AND SOFT</h1> <!-- Título do produto -->
+            <h2>BILLIE EILLISH - 2024</h2> <!-- Subtítulo com informações adicionais -->
+            <p class="price">R$ 400,00</p> <!-- Preço do produto -->
+            
+            <div class="product-features">
+                <div class="feature">DISCOS HIGIENIZADOS</div> <!-- Característica do produto -->
+                <div class="feature">DEVOLVA SE NÃO GOSTAR</div> <!-- Característica do produto -->
+                <div class="feature">EMBALAGEM REFORÇADA</div> <!-- Característica do produto -->
+            </div>
+
+            <div class="cep-freight-container">
+                <input type="text" placeholder="Seu CEP" class="cep-input"> <!-- Campo de entrada para o CEP -->
+                <button class="calculate-freight">Calcular Frete</button> <!-- Botão para calcular o frete -->
+            </div>
+
+            <div class="cart-help-container">
+                <button class="buy-button">Comprar</button> <!-- Botão de compra -->
+                <button class="add-to-cart">Adicionar ao carrinho</button> <!-- Botão de adicionar ao carrinho -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

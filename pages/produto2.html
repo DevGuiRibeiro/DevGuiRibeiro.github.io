@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #2c2c2c;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 3000px;
+            background-color: #699EA0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 2;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-info h1 {
+            margin-top: 20px;
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-info h2{
+            margin-top: -60px;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .product-features {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .feature {
+            background-color: #2c2c2c;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            flex: 1;
+            text-align: center;
+            margin: 0 5px;
+            color: #ffffff;
+        }
+
+        .cep-freight-container {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            align-items: center;
+        }
+
+        .cep-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .calculate-freight {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .calculate-freight:hover {
+            background-color: #0c4d8f;
+        }
+
+        .cart-help-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .buy-button,
+        .add-to-cart {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            color: #fff;
+        }
+
+        .buy-button {
+            background-color: #2c2c2c;
+        }
+
+        .buy-button:hover {
+            background-color: #2c2c2c;
+        }
+
+        .add-to-cart {
+            background-color: #2c2c2c;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2c2c2c;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Imagem do Produto à Esquerda -->
+        <div class="product-image">
+            <img src="https://lastfm.freetls.fastly.net/i/u/770x0/6d1923b22731e0eee921a4c7de3a3d88.jpg#6d1923b22731e0eee921a4c7de3a3d88" alt="Imagem do Produto">
+        </div>
+
+        <!-- Informações do Produto à Direita -->
+        <div class="product-info">
+            <h1>ETERNAL SUNSHINE</h1>
+            <h2>ARIANA GRANDE - 2024</h2>
+            <p class="price">R$ 189,90</p>
+            
+            <div class="product-features">
+                <div class="feature">DISCOS HIGIENIZADOS</div>
+                <div class="feature">DEVOLVA SE NÃO GOSTAR</div>
+                <div class="feature">EMBALAGEM REFORÇADA</div>
+            </div>
+
+            <div class="cep-freight-container">
+                <input type="text" placeholder="Seu CEP" class="cep-input">
+                <button class="calculate-freight">Calcular Frete</button>
+            </div>
+
+            <div class="cart-help-container">
+                <button class="buy-button">Comprar</button>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

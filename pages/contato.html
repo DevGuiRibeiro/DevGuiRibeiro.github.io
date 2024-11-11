@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<style>
+    /* Estilização geral e reset de margens e preenchimento */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Garante que padding e borda sejam incluídos nas dimensões */
+        font-family: sans-serif; /* Define a fonte padrão */
+    }
+    body {
+        display: flex; /* Exibe o corpo como um flex container */
+        align-items: center; /* Centraliza verticalmente o conteúdo */
+        justify-content: center; /* Centraliza horizontalmente o conteúdo */
+        min-height: 100vh; /* Altura mínima de 100% da altura da tela */
+        background: #2c2c2c; /* Cor de fundo */
+    }
+    section {
+        display: flex; /* Exibe a seção como um flex container */
+        align-items: center; /* Centraliza verticalmente os elementos */
+        justify-content: center; /* Centraliza horizontalmente os elementos */
+        flex-direction: column; /* Coloca os elementos em coluna */
+        padding: 10px 45px; /* Espaçamento interno */
+        background: #699EA0; /* Cor de fundo */
+        width: 500px; /* Largura da seção */
+        box-shadow: #699EA0; /* Sombra da seção */
+    }
+    section h2 {
+        color: #f5f5f5; /* Cor do texto do título */
+        font-size: 2.5rem; /* Tamanho da fonte */
+        margin: 2rem; /* Espaçamento externo */
+    }
+    section form {
+        display: flex; /* Exibe o formulário como um flex container */
+        flex-direction: column; /* Coloca os elementos em coluna */
+        width: 100%; /* Largura total */
+    }
+    form label {
+        color: #f5f5f5; /* Cor do texto dos rótulos */
+        font-size: 17px; /* Tamanho da fonte */
+        margin-bottom: 4px; /* Espaçamento inferior */
+    }
+    form input {
+        padding: 15px; /* Espaçamento interno */
+        outline: none; /* Remove o contorno ao focar */
+        border: 0; /* Remove a borda */
+        margin-bottom: 20px; /* Espaçamento inferior */
+        font-size: 15px; /* Tamanho da fonte */
+        transition: all 0.5s; /* Transição suave */
+    }
+    form input:focus {
+        border-radius: 16px; /* Bordas arredondadas ao focar */
+    }
+    form textarea {
+        padding: 10px; /* Espaçamento interno */
+        outline: none; /* Remove o contorno ao focar */
+        border: 0; /* Remove a borda */
+        font-size: 15px; /* Tamanho da fonte */
+        margin-bottom: 30px; /* Espaçamento inferior */
+        transition: all 0.5s; /* Transição suave */
+    }
+    form textarea:focus {
+        border-radius: 16px; /* Bordas arredondadas ao focar */
+    }
+    form button {
+        padding: 15px; /* Espaçamento interno */
+        cursor: pointer; /* Adiciona o ponteiro do mouse */
+        font-size: 16px; /* Tamanho da fonte */
+        background: transparent; /* Fundo transparente */
+        border: 2px solid #f5f5f5; /* Borda */
+        color: #f5f5f5; /* Cor do texto */
+        transition: all 1s; /* Transição suave */
+        margin-bottom: 20px; /* Espaçamento inferior */
+    }
+    form button:hover {
+        background: #f5f5f5; /* Cor de fundo ao passar o mouse */
+        color: #101026; /* Cor do texto ao passar o mouse */
+        border-radius: 16px; /* Bordas arredondadas */
+    }
+</style>
+
+<body>
+    <section>
+        <h2>Contato</h2> <!-- Título da seção -->
+        <form action="https://api.staticforms.xyz/submit" method="post"> <!-- Início do formulário, envia dados para a API -->
+            <label>Nome</label> <!-- Rótulo para o campo de nome -->
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required> <!-- Campo de entrada de texto -->
+            <label>Email</label> <!-- Rótulo para o campo de email -->
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required> <!-- Campo de entrada de email -->
+            <label>Mensagem</label> <!-- Rótulo para o campo de mensagem -->
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea> <!-- Área de texto -->
+            <a href="obrigado.html" target="_blank"> <!-- Link para a página de agradecimento -->
+                <button type="submit">Enviar</button> <!-- Botão de envio -->
+            </a>
+        </form>
+    </section>
+</body>
+</html>

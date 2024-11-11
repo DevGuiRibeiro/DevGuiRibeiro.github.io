@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rock On Track</title>
+    <link rel="stylesheet" href="css/globals.css"/>
+ </head>
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <div class="header-inner-content">
+            <!-- Logo do site -->
+            <h1 class="logo">ROCK<span>ON</span><span>TRACK</span></h1>
+            <nav>
+                <ul>
+                <!-- No home usei um targer porque quando usava onclick não pegava -->
+                <a href="index.html" target="_blank">
+                <li>Home</li>
+                </a>
+                <!-- Leva a várias seções do site -->
+                <a onclick="location.href='#produtos'">
+                <li>Produtos</li>
+                </a>
+                <a onclick="location.href='#novidades'">
+                <li>Novidades</li>
+                </a>
+                <a href="pages/contato.html" target="_blank">
+                <li>Contato</li>
+                </a>
+                </ul>
+                
+            </nav>
+            <!-- logo da mão a direita -->
+            <div class="nav-icon-conteiner">
+                <img src="assets/imagens/rock.png" height="70"/>
+            </div>
+        </div>
+    </div>
+
+     <!-- Cabeçalho principal com conteúdo introdutório -->
+    <header>
+        <div class="header-inner-content">
+            <div class="img-conteiner">
+                <img src="">
+            </div>
+            <div class="header-button-side">
+                <div class="header-button-side-left">
+                <!-- Título e parágrafo -->
+                <h2>Curta Música Da Melhor Maneira!</h2>
+                <p>A música é uma das formas mais poderosas de expressão humana, capaz de tocar nossas emoções, aliviar o estresse e conectar pessoas de diferentes culturas. Ela tem a capacidade de melhorar nosso humor, trazendo sentimentos de alegria, calma ou inspiração, dependendo do ritmo e melodia.</p>
+                </div>
+                <div class="header-button-side-right"></div>
+                <!-- Imagem do disco -->
+                <img src="assets/imagens/disco de vinil.png" height="300"/>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção destaque dos disco 80/90 onde está o banner rotativo -->
+        <div class="gray-background">
+            <div class="linha">
+                <h2>Os Melhores Discos da Década 80/90</h2>
+            </div>
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <!-- Imagem utilizada dos disco -->
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/b93f0e5c317b073e6d714c7ff97f4d88.jpg#b93f0e5c317b073e6d714c7ff97f4d88" height="300">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/5b23b7889f6503575ff984fa7cca55b5.jpg#5b23b7889f6503575ff984fa7cca55b5" height="300">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/580bd211ca9c86746b9556822def864f.jpg#580bd211ca9c86746b9556822def864f" height="300">
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de novidades -->
+        <div>
+            <div class="page-inner-content" id="novidades">
+            <h3 class="section-title">Novidades</div>
+            <div class="subtitle-underline"></div>
+            <div class="cols cols-4">
+                <!-- Produto individual com link, imagem, nome e preço -->
+                <div class="product">
+                    <a href="pages/produto1.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/90b54d4d4658b8215a5fcd3cf00072d7.jpg#90b54d4d4658b8215a5fcd3cf00072d7">
+                    </a>
+                    <p class="product-name">HIT ME HARD AND SOFT</p>
+                    <!-- Estrelas de avaliação -->
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 400</p>
+                    <!-- Repeti a estrutura acima para outros produtos -->
+                    <img src="">
+                </div>
+                <div class="product">
+                    <a href="pages/produto2.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/6d1923b22731e0eee921a4c7de3a3d88.jpg#6d1923b22731e0eee921a4c7de3a3d88">
+                    </a>
+                    <p class="product-name">ETERNAL SUNSHINE</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 189,90</p>
+                    <img src="">
+                </div>
+                <div class="product">
+                    <a href="pages/produto3.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/d02aeea86757347aa3b1fc3f67f52f44.jpg#d02aeea86757347aa3b1fc3f67f52f44">
+                    </a>
+                    <p class="product-name">COWBOY CARTER</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 569,90</p>
+                    <img src="">
+                </div>
+                <div class="product">
+                    <a href="pages/produto4.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/f3fff62e1ee136a9daeec2ad4d281df5.jpg#f3fff62e1ee136a9daeec2ad4d281df5">
+                    </a>
+                    <p class="product-name">72 SEASONS</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price"><span>R$</span> 204,90</p>
+                    <img src="">
+                </div>
+            </div>
+        </div> 
+
+        <!-- Seção de Lançamento -->  
+        <div>
+            <div class="page-inner-content">
+            <h3 class="section-title">Lançamentos</div>
+            <div class="subtitle-underline"></div>
+            <div class="cols cols-4">
+                <!-- Produto individual com link, imagem, nome e preço -->
+                <div class="product" id="produtos">
+                    <a href="pages/produto5.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/50f59fc2dcff4345c3d492e1a71f634f.jpg#50f59fc2dcff4345c3d492e1a71f634f">
+                    </a>
+                    <p class="product-name">CITY OF EVIL</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 209,99</p>
+                    <!-- Mais uma vez repeti a estrutura acima para outros produtos -->
+                </div>
+                <div class="product">
+                    <a href="pages/produto6.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/fb8a432b8a23a386b9fbaaa4756800b2.jpg#fb8a432b8a23a386b9fbaaa4756800b2">
+                    </a>
+                    <p class="product-name">POWERSLAVE</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 199,99</p>
+                </div>
+                <div class="product">
+                    <a href="pages/produto7.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/0600afa4a3ad523c92d902eca8ca5457.jpg#0600afa4a3ad523c92d902eca8ca5457">
+                    </a>
+                    <p class="product-name">SCREAMING FOR VENGEANCE</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 129,90</p>
+                </div>
+                <div class="product">
+                    <a href="pages/produto8.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/496498a19c23a6f99e4b7032d06b9ab1.jpg#496498a19c23a6f99e4b7032d06b9ab1">
+                    </a>
+                    <p class="product-name">ACE OF SPADES</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price"><span>R$</span> 230,90</p>
+                    
+                </div>
+                <div class="product">
+                    <a href="pages/produto9.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/a15591b40c1544f0b9fe9b9dcd88145d.jpg#a15591b40c1544f0b9fe9b9dcd88145d">
+                    </a>
+                    <p class="product-name">NO MORE TEARS</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 239,90</p>
+                    
+                </div>
+                <div class="product">
+                    <a href="pages/produto10.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/667a1e7c44ff4263a12bc8f090e0761b.jpg#667a1e7c44ff4263a12bc8f090e0761b">
+                    </a>
+                    <p class="product-name">BRITISH STEEL</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 169,90</p>
+                   
+                </div>
+                <div class="product">
+                    <a href="pages/produto11.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/923998ab6997b27d59b7e691e22c6e08.jpg#923998ab6997b27d59b7e691e22c6e08">
+                    </a>
+                    <p class="product-name">COWUNTDOWN OF EXCTINCTION</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$</span> 369,30</p>
+                </div>
+                <div class="product">
+                    <a href="pages/produto12.html" target="_blank">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/770x0/07f492a00c904cc6ccf868010be4d5a6.jpg#07f492a00c904cc6ccf868010be4d5a6">
+                    </a>
+                    <p class="product-name">MASTER OF PUPPETS</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <p class="product-price"><span>R$</span> 266,60</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de contato com mapa do Google Maps -->
+        <div class="map">
+            <section class="contato">
+                <h1>Entre em contato com a gente!</h1>
+                <p>Entre em contato com a ROCK ON TRACK, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+                <!-- Coloquei mais um target aqui para ir para o contato -->
+                <a href="pages/contato.html" target="_blank">
+                <button class="btn-contato">Entrar em contato</button>
+                </a>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.085320120343!2d-35.955306888486085!3d-8.294307983392178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98be8cf3157dd%3A0x98a0a3ecad4be817!2sCentro%20Universit%C3%A1rio%20UniFavip%20-%20Wyden%20-%20Entrada%20Principal!5e0!3m2!1spt-BR!2sbr!4v1731216107278!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            
+        </div>    
+      </div>
+    </main>
+
+    <!-- Seção do rodapé -->
+    <footer class="gray-background">
+        <div class="page-inner-content footer-content">
+            <!-- Seção de redes sociais -->
+            <div class="share-options">
+                <p>Acesse Nossas Redes Sociais</p>
+                <p>Fale conosco Pelo Instagram ou Facebook</p>
+                <div>
+                    <a href="https://www.instagram.com/computacaounifavip_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" height="">
+                    </a>
+                    <a href="https://www.instagram.com/computacaounifavip_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <img src="https://img.icons8.com/?size=100&id=13912&format=png&color=000000" height="">
+                    </a>
+                </div>
+            </div>
+            <!-- Logotipo e texto sobre a empresa -->
+            <div class="logo-footer">
+                <h1 class="logo">ROCK<span>ON</span><span>TRACK</span></h1>
+                <p>Queremos levar a música ate a sua casa</p>
+            </div>
+            <div class="sobre">
+                <p>SOBRE A EMPRESA</p>
+                <h1>Nós somos apaixonados por música e pela rica história do vinil. A nossa missão é trazer de volta o som autêntico e imersivo dos discos de vinil, oferecendo uma experiência única para os amantes da música de todos os estilos e gerações. Com uma vasta seleção de discos novos e usados, buscamos conectar você a clássicos atemporais, lançamentos exclusivos e raridades que fazem o coração dos colecionadores bater mais forte.</h1>
+            </div>
+
+            
+        </div>
+    </footer>
+    <!-- Link para o Java Script, quando estava colocando em cima não estava funcionando -->
+    <script src="js/Js.js"></script>
+</body>
+</html>
